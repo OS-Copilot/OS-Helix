@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5fbff">
+  <meta name="description" content="OS-Helix unifies GUI interaction and code execution in a native computer-using agent.">
+  <title>OS-Helix | Native GUI and Code Computer Use</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="OS-Helix home"><span class="brand-mark">⌁</span> OS-Helix</a>
+    <nav aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#framework">Framework</a>
+      <a href="#results">Results</a>
+      <a href="#cases">Cases</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Native hybrid computer-using agent</p>
+        <h1 id="hero-title"><span class="gradient-text">OS-Helix</span><br>Unifying GUI Interaction and Code Execution</h1>
+        <p class="hero-subtitle">One policy learns when to see, click, type, and run code across real desktop workflows.</p>
+        <div class="resource-links" aria-label="Research resources">
+          <span class="resource pending" title="arXiv link to be added">↗ Paper <small>Coming soon</small></span>
+          <span class="resource pending" title="GitHub link to be added">⌘ Code <small>Coming soon</small></span>
+          <span class="resource pending" title="Hugging Face link to be added">◈ Models &amp; Data <small>Coming soon</small></span>
+        </div>
+        <p class="authors">Bowen Yang<sup>*</sup> · Kaiming Jin<sup>*</sup> · Zichen Ding · Zhenyu Wu · Zehao Li · Zhoumianze Liu · Kanzhi Cheng · Fangzhi Xu · Yanan Sun · Qiushi Sun<sup>†</sup> · Yu Qiao<sup>†</sup></p>
+        <p class="author-note"><sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors</p>
+      </div>
+      <div class="hero-visual" aria-label="Animated blue and green double helix representing GUI and code actions">
+        <div class="visual-glow visual-glow-blue"></div><div class="visual-glow visual-glow-green"></div>
+        <canvas id="helix" width="560" height="480" role="img" aria-label="Animated double helix in blue and green"></canvas>
+        <span class="helix-tag tag-gui">GUI interaction</span><span class="helix-tag tag-code">Code execution</span>
+      </div>
+    </section>
+
+    <section id="overview" class="section-shell section-pad">
+      <div class="section-heading centered"><p class="eyebrow">The idea</p><h2>Real desktop work needs both paths.</h2><p>GUI actions understand the visible interface. Code handles structured files and repeatable operations. OS-Helix trains one agent to coordinate both in the same action space.</p></div>
+      <div class="figure-panel teaser-panel"><img src="assets/teaser.png" alt="Comparison of GUI-only, code-only, and hybrid computer-use paradigms" loading="lazy"><p class="figure-caption">A native hybrid policy combines visually grounded interaction with general-purpose programmatic actions.</p></div>
+      <div class="pillars">
+        <article class="pillar"><span class="pillar-icon blue">01</span><h3>Executable desktop states</h3><p>Applications and authentic file artifacts are composed into reproducible Ubuntu environments.</p></article>
+        <article class="pillar"><span class="pillar-icon teal">02</span><h3>Verifiable task synthesis</h3><p>Exploration grounds instructions in the current environment; a separate evaluator checks the final state.</p></article>
+        <article class="pillar"><span class="pillar-icon green">03</span><h3>Balanced hybrid learning</h3><p>Filtered GUI/code trajectories initialize the policy, followed by online RL with Step-balanced GSPO.</p></article>
+      </div>
+    </section>
+
+    <section id="framework" class="soft-section section-pad"><div class="section-shell">
+      <div class="section-heading"><p class="eyebrow">Framework</p><h2>From real artifacts to a unified policy</h2><p>OS-Helix connects environment construction, grounded task generation, hybrid demonstrations, and live desktop reinforcement learning.</p></div>
+      <div class="figure-panel"><img src="assets/method.png" alt="Four-stage OS-Helix pipeline: application-artifact composition, task synthesis, SFT, and online RL" loading="lazy"><p class="figure-caption">The four stages of the OS-Helix training pipeline.</p></div>
+    </div></section>
+
+    <section id="results" class="section-shell section-pad">
+      <div class="section-heading centered"><p class="eyebrow">Main experiments</p><h2>Hybrid training makes the difference.</h2><p>Results from the paper, with success rates shown as percentages.</p></div>
+      <div class="result-grid">
+        <article class="result-card"><p class="result-label">OSWorld-Verified</p><strong>66.44<span>%</span></strong><p>OS-Helix-27B-RL · 361 tasks</p><div class="result-foot">+19.94 points over matched Qwen3.5-27B hybrid baseline</div></article>
+        <article class="result-card"><p class="result-label">WindowsAgentArena</p><strong>63.87<span>%</span></strong><p>OS-Helix-27B-RL · 50-step budget</p><div class="result-foot">+23.05 points over matched Qwen3.5-27B GUI baseline</div></article>
+      </div>
+      <div class="figure-panel analysis-panel"><img src="assets/efficiency.png" alt="OSWorld execution efficiency plots comparing interaction steps and success at step budget K" loading="lazy"><p class="figure-caption">The trained policy uses fewer interactions and covers more successes under small step budgets.</p></div>
+    </section>
+
+    <section id="cases" class="soft-section section-pad"><div class="section-shell">
+      <div class="section-heading"><p class="eyebrow">Agent behavior</p><h2>GUI and code work together.</h2><p>In representative traces, the agent carries information across modalities: it reads the visible interface, performs precise operations with code, and returns to the GUI when the task calls for it.</p></div>
+      <div class="figure-panel"><img src="assets/case-study.png" alt="Examples of GUI and code coordination in desktop tasks" loading="lazy"><p class="figure-caption">Representative GUI-to-code and code-to-GUI handoffs from the paper.</p></div>
+    </div></section>
+
+    <section class="section-shell section-pad abstract-section"><div class="section-heading centered"><p class="eyebrow">Abstract</p><h2>About OS-Helix</h2></div><p>Real desktop automation is neither purely visual nor purely programmatic. OS-Helix is an end-to-end trained multimodal computer-using agent that unifies GUI actions and code execution in one action space. Its training pipeline composes applications with authentic artifacts to create executable desktop states, synthesizes environment-grounded tasks with independent evaluators, and combines filtered hybrid SFT with online reinforcement learning. Step-balanced GSPO balances the contribution of heterogeneous GUI and code steps. On OSWorld-Verified, OS-Helix-27B-RL reaches 66.44% success, with additional evidence of transfer to WindowsAgentArena.</p></section>
+  </main>
+  <footer><div class="section-shell footer-inner"><span class="brand"><span class="brand-mark">⌁</span> OS-Helix</span><span>Research project page · Paper, code, and model links will be added on release.</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
