@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g"><stop stop-color="#3488e9"/><stop offset="1" stop-color="#75c97c"/></linearGradient></defs>
-  <rect width="64" height="64" rx="17" fill="url(#g)"/>
-  <path d="M17 13c0 15 30 10 30 25S17 43 17 56M47 13c0 15-30 10-30 25s30 5 30 18" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
-  <path d="M21 24h22M21 40h22" stroke="#fff" stroke-opacity=".65" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OS-Helix">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3488e9"/><stop offset=".55" stop-color="#19b6b1"/><stop offset="1" stop-color="#75c97c"/></linearGradient></defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <path d="M17 17v30M47 17v30M17 32h30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
 </svg>
