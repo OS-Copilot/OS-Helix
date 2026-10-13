@@ -284,6 +284,8 @@ a { color: #2b83ae; }
 .header-content { color: #f5fbff; }
 .header-content h1, .header-content h2 { color: #d6f8f3; }
 .header-content h1 { font-size: clamp(3.1rem, 4.9vw, 5rem); letter-spacing: -.045em; margin: 0 0 .18em; }
+.header-content h1.site-title { display: flex; align-items: center; gap: .15em; }
+.site-title img { display: block; width: .84em; height: .84em; flex: 0 0 auto; }
 .header-content h2 { font-size: clamp(1.45rem, 2.2vw, 2.2rem); letter-spacing: -.018em; margin: 0 0 .5em; }
 .header-content strong { color: #c7f3bf; }
 .header-content > p { line-height: 1.55; color: #e8f6f8; }
