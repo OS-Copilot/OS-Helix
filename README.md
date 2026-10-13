@@ -6,4 +6,4 @@ The layout follows the [OS-Symphony `webpage` branch](https://github.com/OS-Copi
 
 OS-Helix copy, figures, and reported numbers are based on the paper manuscript. The four figures are stored as SVG assets in `assets/`. The hero robot was generated for this project with the built-in image generation tool, using a prompt for a GUI-and-code robot with subtle blue and green double-helix ribbons. The three feature icons are from [Lucide](https://lucide.dev/) (ISC license in `LUCIDE-LICENSE`); the arXiv, GitHub, and Hugging Face marks are from [Simple Icons](https://simpleicons.org/) (CC0 license in `SIMPLE-ICONS-LICENSE`).
 
-The arXiv, Code, and Models & Data buttons have empty URLs until public destinations are provided.
+The Code button links to the OS-Helix GitHub repository. The arXiv and Models & Data buttons are links with empty URLs until public destinations are provided.

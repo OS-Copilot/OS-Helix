@@ -35,9 +35,9 @@
             </div>
           </div>
           <div class="button-container" aria-label="Research resources">
-            <a href="" class="button" aria-disabled="true" tabindex="-1"><img src="assets/icons/arxiv.svg" alt=""> arXiv</a>
-            <a href="" class="button" aria-disabled="true" tabindex="-1"><img src="assets/icons/github.svg" alt=""> Code</a>
-            <a href="" class="button" aria-disabled="true" tabindex="-1"><img src="assets/icons/huggingface.svg" alt=""> Models &amp; Data</a>
+            <a href="" class="button"><img src="assets/icons/arxiv.svg" alt=""> arXiv</a>
+            <a href="https://github.com/OS-Copilot/OS-Helix/" class="button"><img src="assets/icons/github.svg" alt=""> Code</a>
+            <a href="" class="button"><img src="assets/icons/huggingface.svg" alt=""> Models &amp; Data</a>
           </div>
         </div>
         <div class="header-image">
@@ -50,7 +50,7 @@
   <d-article>
     <div class="byline">
       <div class="byline-container">
-        <p class="author-list">Bowen Yang<sup>*</sup> &emsp; Kaiming Jin<sup>*</sup> &emsp; Zichen Ding &emsp; Zhenyu Wu &emsp; Zehao Li &emsp; Zhoumianze Liu &emsp; Kanzhi Cheng &emsp; Fangzhi Xu &emsp; Yanan Sun &emsp; Qiushi Sun<sup>†</sup> &emsp; Yu Qiao<sup>†</sup></p>
+        <p class="author-list">Bowen Yang<sup>*</sup> &emsp; Kaiming Jin<sup>*</sup> &emsp; Zichen Ding &emsp; Zhenyu Wu &emsp; Zehao Li &emsp; Zhoumianze Liu &emsp; <br> Kanzhi Cheng &emsp; Fangzhi Xu &emsp; Yanan Sun &emsp; Qiushi Sun<sup>†</sup> &emsp; Yu Qiao<sup>†</sup></p>
         <p class="author-note"><sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors</p>
       </div>
     </div>
@@ -63,7 +63,7 @@
     <blockquote><strong>Core idea:</strong> A GUI tool and a code tool are most useful when one policy learns how to choose and coordinate them during real desktop tasks.</blockquote>
 
     <p class="text abstract">Real desktop automation is neither purely visual nor purely programmatic. OS-Helix unifies GUI actions and code execution in one action space. Its training pipeline composes applications with authentic artifacts, synthesizes environment-grounded tasks with independent evaluators, and learns from filtered hybrid trajectories followed by online reinforcement learning.</p>
-    <img class="wide-figure" src="assets/teaser.svg" alt="The paper's comparison of GUI-only, code-only, and hybrid computer use">
+    <img class="wide-figure-teaser" src="assets/teaser.svg" alt="The paper's comparison of GUI-only, code-only, and hybrid computer use">
     <p class="text abstract">A native hybrid policy can ground itself in the visible interface while using code for precise manipulation of files and structured state. The policy learns modality routing through training rather than through inference-time tool access alone.</p>
 
     <div class="icon-row" aria-label="Jump to a section">

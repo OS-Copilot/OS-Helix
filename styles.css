@@ -290,8 +290,9 @@ a { color: #2b83ae; }
 .icon-container { gap: 16px; }
 .icon-item { align-items: flex-start; color: #eef9fa; font-size: .96rem; line-height: 1.48; }
 .icon-item img { flex: 0 0 auto; width: 30px; height: 30px; margin-top: 2px; filter: brightness(0) invert(1); opacity: .9; }
-.button-container a.button { display: inline-flex; align-items: center; gap: 8px; margin: 5px 3px 5px 0; padding: 10px 18px; border: 2px solid #b5e4e7; border-radius: 20px; background: #e9f7f5; color: #164c67; cursor: default; font-family: Arial, sans-serif; font-size: .86rem; font-weight: 700; text-decoration: none; pointer-events: none; }
-.button-container a.button:hover { background: #e9f7f5; color: #164c67; }
+.button-container a.button { display: inline-flex; align-items: center; gap: 8px; margin: 5px 3px 5px 0; padding: 10px 18px; border: 2px solid #b5e4e7; border-radius: 20px; background: #e9f7f5; color: #164c67; cursor: pointer; font-family: Arial, sans-serif; font-size: .86rem; font-weight: 700; text-decoration: none; }
+.button-container a.button:hover { background: #d2eff2; color: #164c67; }
+.button-container a.button:focus-visible { outline: 3px solid #75c97c; outline-offset: 3px; }
 .button-container a.button img { width: 17px; height: 17px; object-fit: contain; margin: 0; }
 .header-image img { max-width: 100%; width: 100%; filter: drop-shadow(0 20px 26px rgba(11,43,63,.18)); }
 
@@ -308,7 +309,8 @@ blockquote { max-width: 760px; margin: 30px auto 50px; padding: 14px 22px; borde
 .abstract { font-size: 1.22rem; }
 h1.text { font-size: 2.05rem; line-height: 1.25; margin-top: 2.4em; margin-bottom: .65em; color: #193c55; }
 h2.text { font-size: 1.52rem; line-height: 1.3; margin-top: 1.9em; color: #27526b; }
-.wide-figure { display: block; width: 100%; height: auto; margin: 26px auto 34px; }
+.wide-figure-teaser { display: block; width:60%; height: auto; margin: 26px auto 34px; }
+.wide-figure { display: block; width: 80%; height: auto; margin: 26px auto 34px; }
 .icon-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 42px auto 4px; max-width: 900px; padding: 0; }
 .icon-link { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; flex: 1 1 160px; max-width: 205px; min-height: 102px; padding: 12px 18px; border: 2px solid #7fb5df; border-radius: 10px; background: #e9f5fa; color: #255778; text-decoration: none; font: 800 .93rem/1.3 Arial,sans-serif; }
 .icon-link:hover { background: #d2eff2; }
