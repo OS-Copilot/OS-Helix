@@ -64,7 +64,7 @@ Code actions are typically much longer than clicks or keystrokes. Standard Group
 
 ## Main Experiments
 
-We evaluate on **361 OSWorld-Verified tasks**, excluding the eight Google Drive tasks, and on WindowsAgentArena for cross-platform transfer. Our reproduced models share the same harness and environment configuration, with a 50-step interaction budget unless otherwise stated. Published framework and specialist scores provide broader context; they are not controlled matched-harness comparisons. All success rates below are percentages.
+We evaluate OS-Helix on **OSWorld-Verified** and **WindowsAgentArena**. The two benchmarks measure desktop task success on Ubuntu and cross-platform transfer to Windows.
 
 ### OSWorld-Verified
 
@@ -218,17 +218,6 @@ GUI clicks and keystrokes are short, while code actions can contain many more to
 
 Figure 4(c) tracks Workflow and overall success across checkpoints from the first SFT epoch; Figure 4(d) holds desktop supervision fixed and varies the proportion of the 40K general-purpose multimodal pool. Both studies show overall gains as supervision grows, supporting complementary contributions from hybrid desktop trajectories and general-purpose data. Panels (e)–(f) compare instruction-embedding similarity distributions within the synthesized corpus and against OSWorld. Together with the domain-removal ablation, these distributions provide evidence consistent with transferable desktop-task structure; instruction similarity alone does not establish the absence of every form of overlap.
 
-**Table 16 · Paired-bootstrap uncertainty on OSWorld**
-
-| Metric | Comparison | Difference (pp) | 95% confidence interval |
-| --- | --- | --- | --- |
-| Pass@1 | SFT − hybrid backbone | +16.21 | [+10.75, +21.66] |
-| Pass@1 | RL − hybrid backbone | +19.89 | [+14.24, +25.59] |
-| Pass@1 | RL − SFT | +3.68 | [+0.93, +8.33] |
-| Pass@3 | RL − SFT | +5.56 | [+2.24, +8.97] |
-
-Values are reproduced from Table 16, using 100,000 paired bootstrap replicates over 361 tasks. Its task-level point estimates differ slightly from direct subtraction of the rounded aggregate scores in Table 1.
-
 ### Additional Experiments
 
 The following diagnostics use **Qwen3-VL-32B backbones and SFT only**, with the same data recipe. They probe transfer across model families and the role of supervision and context; they do not measure the contribution of the Qwen3.5-based online RL stage.
@@ -320,13 +309,9 @@ Online RL is currently demonstrated on the dense 27B model under limited compute
 
 ```bibtex
 @misc{yang2026oshelix,
-  title  = {OS-Helix: Unifying GUI Interaction and Code Execution
-            in Native Computer-Using Agents},
-  author = {Bowen Yang and Kaiming Jin and Zichen Ding and
-            Zhenyu Wu and Zehao Li and Zhoumianze Liu and
-            Kanzhi Cheng and Fangzhi Xu and Yanan Sun and
-            Qiushi Sun and Yu Qiao},
-  year   = {2026},
-  url    = {https://github.com/OS-Copilot/OS-Helix}
+  title = {OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents},
+  author = {Bowen Yang and Kaiming Jin and Zichen Ding and Zhenyu Wu and Zehao Li and Zhoumianze Liu and Kanzhi Cheng and Fangzhi Xu and Yanan Sun and Qiushi Sun and Yu Qiao},
+  year = {2026},
+  url = {https://github.com/OS-Copilot/OS-Helix}
 }
 ```
