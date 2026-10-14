@@ -8,36 +8,38 @@
   <title>OS-Helix: Unifying GUI Interaction and Code Execution</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="header-wrapper" id="top">
     <div class="header-container header-outer">
       <nav class="navbar" aria-label="Research navigation">
-        <a class="navbar-link" href="https://os-copilot.github.io/OS-Symphony/">More Research</a>
+        <div class="research-menu"><button class="research-toggle" aria-expanded="false" aria-controls="research-links">More Research <svg class="research-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul id="research-links" class="research-links" hidden><li><a href="https://os-copilot.github.io/OSReward-Home/" target="_blank" rel="noopener"><span class="project-mark" aria-hidden="true">★</span><span>OSReward<small>Cross-platform reward evaluation</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://os-copilot.github.io/OS-Symphony/" target="_blank" rel="noopener"><span class="project-mark" aria-hidden="true">♫</span><span>OS-Symphony<small>Generalist computer-using agents</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://qiushisun.github.io/OS-Sentinel-Home/" target="_blank" rel="noopener"><img src="assets/projects/os-sentinel.png" alt="" width="88" height="88"><span>OS-Sentinel<small>Mobile GUI safety</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://qiushisun.github.io/ScienceBoard-Home/" target="_blank" rel="noopener"><img src="assets/projects/scienceboard.png" alt="" width="88" height="88"><span>ScienceBoard<small>Computer use for science</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://qiushisun.github.io/OS-Genesis-Home/" target="_blank" rel="noopener"><img src="assets/projects/os-genesis.png" alt="" width="88" height="88"><span>OS-Genesis<small>Annotation-free trajectory synthesis</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://osatlas.github.io/" target="_blank" rel="noopener"><img src="assets/projects/os-atlas.png" alt="" width="88" height="88"><span>OS-Atlas<small>GUI action foundation model</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://os-copilot.github.io/OpenMobile2-Home/" target="_blank" rel="noopener"><img src="assets/projects/openmobile.png" alt="" width="88" height="88"><span>OpenMobile-2<small>Versatile mobile agents</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://njucckevin.github.io/openmobile/" target="_blank" rel="noopener"><img src="assets/projects/openmobile.png" alt="" width="88" height="88"><span>OpenMobile<small>Open mobile agents</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li><li><a href="https://aclanthology.org/2024.acl-long.505" target="_blank" rel="noopener"><img src="assets/projects/seeclick.png" alt="" width="88" height="88"><span>SeeClick<small>GUI grounding</small></span><span class="external-arrow" aria-hidden="true">↗</span></a></li></ul></div>
+<div class="section-nav" aria-label="On this page"><a href="#sec:overview">Overview</a><a href="#sec:pipeline">Framework</a><a href="#sec:benchmarking">Main Experiments</a><a href="#sec:ablation">Ablations</a><a href="#sec:discussion">Discussion</a><a href="#sec:case_study">Case Studies</a><a href="#sec:limitations">Limitations</a></div>
       </nav>
       <div class="header-container" id="header-container">
         <div class="header-content">
-          <h1 class="site-title"><img src="assets/icons/title-helix.svg" alt=""><i>OS-Helix</i></h1>
-          <h2>Unifying GUI Interaction and Code Execution in Native Computer-Using Agents</h2>
+          <h1 class="site-title"><img src="assets/icons/title-helix.svg" alt="" width="24" height="24"><i>OS-Helix</i></h1>
+          <h2 class="paper-subtitle">Unifying GUI Interaction and Code Execution in Native Computer-Using Agents</h2>
           <p>We present OS-Helix, an end-to-end trained computer-using agent that treats <strong>GUI interaction</strong> and <strong>code execution</strong> as actions of one policy.</p>
           <div class="icon-container">
             <div class="icon-item">
-              <img src="assets/icons/monitor-cog.svg" alt="">
+              <img src="assets/icons/monitor-cog.svg" alt="" width="24" height="24">
               <div><strong>Executable desktop states</strong>: Applications and authentic artifacts are composed into reproducible task environments.</div>
             </div>
             <div class="icon-item">
-              <img src="assets/icons/clipboard-check.svg" alt="">
+              <img src="assets/icons/clipboard-check.svg" alt="" width="24" height="24">
               <div><strong>Grounded, verifiable tasks</strong>: Exploration proposes instructions and an independent evaluator checks the final state.</div>
             </div>
             <div class="icon-item">
-              <img src="assets/icons/git-merge.svg" alt="">
+              <img src="assets/icons/git-merge.svg" alt="" width="24" height="24">
               <div><strong>Hybrid training</strong>: Filtered GUI/code trajectories initialize the policy before online RL with Step-balanced GSPO.</div>
             </div>
           </div>
           <div class="button-container" aria-label="Research resources">
-            <a href="" class="button"><img src="assets/icons/arxiv.svg" alt=""> arXiv</a>
-            <a href="https://github.com/OS-Copilot/OS-Helix/" class="button"><img src="assets/icons/github.svg" alt=""> Code</a>
-            <a href="" class="button"><img src="assets/icons/huggingface.svg" alt=""> Models &amp; Data</a>
+            <span class="button resource-pending button-paper"><img src="assets/icons/arxiv-color.svg" alt="" width="24" height="24"> Paper · Coming Soon</span>
+            <a href="https://github.com/OS-Copilot/OS-Helix" class="button button-code"><img src="assets/icons/github-color.svg" alt="" width="24" height="24"> Code</a>
+            <span class="button resource-pending button-models"><img src="assets/icons/huggingface-color.svg" alt="" width="24" height="24"> Models &amp; Data · Soon</span>
           </div>
         </div>
         <div class="header-image">
@@ -47,101 +49,213 @@
     </div>
   </div>
 
-  <d-article>
-    <div class="byline">
-      <div class="byline-container">
-        <p class="author-list">Bowen Yang<sup>*</sup> &emsp; Kaiming Jin<sup>*</sup> &emsp; Zichen Ding &emsp; Zhenyu Wu &emsp; Zehao Li &emsp; Zhoumianze Liu &emsp; <br> Kanzhi Cheng &emsp; Fangzhi Xu &emsp; Yanan Sun &emsp; Qiushi Sun<sup>†</sup> &emsp; Yu Qiao<sup>†</sup></p>
-        <p class="author-note"><sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors</p>
-      </div>
-    </div>
+<main id="main-content"><d-article><div class="byline"><div class="byline-container"><p class="author-list"><span class="author">Bowen Yang<sup>1,2,*</sup></span> &ensp; <span class="author">Kaiming Jin<sup>3,*</sup></span> &ensp; <span class="author">Zichen Ding<sup>2,*</sup></span> &ensp; <span class="author">Zhenyu Wu<sup>4</sup></span> &ensp; <span class="author">Zehao Li<sup>1</sup></span> &ensp; <span class="author">Zhoumianze Liu<sup>5</sup></span><br><span class="author">Kanzhi Cheng<sup>6</sup></span> &ensp; <span class="author">Fangzhi Xu<sup>7</sup></span> &ensp; <span class="author">Yanan Sun<sup>2</sup></span> &ensp; <span class="author">Qiushi Sun<sup>8,†</sup></span> &ensp; <span class="author">Yu Qiao<sup>2,†</sup></span></p><p class="author-note">* Equal contribution &nbsp; † Corresponding authors</p></div><div class="affiliations"><div class="affiliation"><img src="assets/logos/ustc.jpeg" alt="University of Science and Technology of China logo" width="1280" height="1280"><span><sup>1</sup> University of Science and Technology of China</span></div><div class="affiliation"><img src="assets/logos/pjlab.png" alt="Shanghai AI Laboratory logo" width="3314" height="1984"><span><sup>2</sup> Shanghai AI Laboratory</span></div><div class="affiliation"><img src="assets/logos/nus.jpeg" alt="National University of Singapore logo" width="4550" height="2100"><span><sup>3</sup> National University of Singapore</span></div><div class="affiliation"><img src="assets/logos/sjtu.png" alt="Shanghai Jiao Tong University logo" width="2805" height="2806"><span><sup>4</sup> Shanghai Jiao Tong University</span></div><div class="affiliation"><img src="assets/logos/fudan.png" alt="Fudan University logo" width="96" height="96"><span><sup>5</sup> Fudan University</span></div><div class="affiliation"><img src="assets/logos/nju.jpeg" alt="Nanjing University logo" width="500" height="613"><span><sup>6</sup> Nanjing University</span></div><div class="affiliation"><img src="assets/logos/xjtu.jpeg" alt="Xi’an Jiaotong University logo" width="1757" height="1757"><span><sup>7</sup> Xi’an Jiaotong University</span></div><div class="affiliation"><img src="assets/logos/hku.png" alt="The University of Hong Kong logo" width="300" height="337"><span><sup>8</sup> The University of Hong Kong</span></div></div></div><div class="result-strip" aria-label="Key results"><div><strong>66.44<span>%</span></strong><span>OSWorld-Verified</span><small>OS-Helix-27B-RL</small></div><div><strong>63.87<span>%</span></strong><span>WindowsAgentArena</span><small>Cross-platform transfer</small></div><div><strong>+19.94<span> pp</span></strong><span>Over the hybrid backbone</span><small>OSWorld · 27B</small></div><div><strong>76.44<span>%</span></strong><span>OSWorld Pass@3</span><small>Coverage across three attempts</small></div></div>
+<section id="sec:overview" class="paper-section"><h2 class="section-title">Overview</h2><p class="text">Real desktop work moves between visible interfaces and the files, scripts, and system state behind them. GUI interaction offers broad access to applications and their rendered state; code enables precise, efficient operations on structured artifacts. <strong>OS-Helix learns to coordinate both within one native computer-using policy.</strong></p>
+<p class="text">Tool access alone does not establish this coordination. In our Qwen3-VL-32B-Instruct diagnostic, simply exposing code lowers OSWorld success from 34.17% to 32.68%. We instead train the decision of <em>when to use the GUI, when to execute code, and when to switch back to verify the result</em>. The same policy observes screenshots and selects GUI actions, Python/Bash execution, or task termination in a unified action space.</p>
+<figure class="paper-figure"><a href="assets/teaser.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: GUI-only, code-only, and hybrid computer use"><img src="assets/teaser.svg" alt="GUI-only, code-only, and hybrid computer use" loading="lazy" width="468" height="368"></a><figcaption>Complementary interfaces to the same desktop state. GUI observations and code execution support one another throughout a task. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<p class="text">Our pipeline connects four ingredients: <strong>application–artifact composition</strong> for reproducible desktop states; <strong>environment-grounded, independently verifiable tasks</strong>; <strong>supervised fine-tuning (SFT)</strong> on filtered hybrid trajectories; and <strong>online reinforcement learning (RL) with Step-balanced GSPO</strong>. The data infrastructure spans 45 application entries and produces approximately 9K instructions, 83K unfiltered desktop SFT samples, and 31K successful filtered samples.</p>
+<p class="text">On OSWorld-Verified, OS-Helix-27B and OS-Helix-35B-A3B improve over their matched hybrid backbones by <strong>35.0% and 33.7% relatively</strong>. OS-Helix-27B-RL reaches <strong>66.44%</strong>, a 42.9% relative improvement over its hybrid backbone, and transfers to WindowsAgentArena at <strong>63.87%</strong> without Windows-specific training data.</p>
+</section>
 
-    <div class="d-admonition">
-      <h4>At a glance</h4>
-      <p>OS-Helix-27B-RL reaches <strong>66.44%</strong> success on OSWorld-Verified and <strong>63.87%</strong> on WindowsAgentArena.</p>
-    </div>
 
-    <blockquote><strong>Core idea:</strong> A GUI tool and a code tool are most useful when one policy learns how to choose and coordinate them during real desktop tasks.</blockquote>
+<section id="sec:pipeline" class="paper-section"><h2 class="section-title">OS-Helix Framework</h2><figure class="paper-figure"><a href="assets/method.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: The four-stage OS-Helix data synthesis and training pipeline"><img src="assets/method.svg" alt="The four-stage OS-Helix data synthesis and training pipeline" loading="lazy" width="652" height="334"></a><figcaption>From executable environments to verifiable tasks, hybrid demonstrations, and online policy improvement. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<h3 class="subsection-title">1. Application–Artifact Composition</h3>
+<p class="text">We factor a desktop environment into versioned applications and authentic artifacts. An application–artifact compatibility graph connects file types to applications that can open and manipulate them: a presentation, for example, can instantiate a task in LibreOffice Impress or WPS Presentation. Version, launch, and initialization configurations make these Ubuntu states reproducible. The inventory covers office work, programming, graphics, media, science, knowledge work, finance, and OS operations.</p>
+<h3 class="subsection-title">2. Environment-Grounded Task Synthesis</h3>
+<p class="text">An Exploration Agent inspects the actual application and artifact before proposing a user instruction and observable success conditions. A global application memory tracks previously exercised functionality to encourage coverage. Once accepted, the instruction is frozen and passed to an independent Evaluator Agent; the evaluator checks the desired terminal state without prescribing a GUI or code solution.</p>
+<p class="text">An <em>everything-is-a-file</em> abstraction turns terminal conditions into inspectable representations where possible. Rule-based checks handle files and command-line state; visual or hybrid checks cover outcomes that require rendered appearance. Instructions are reviewed for feasibility and clarity, evaluators must compile and reject the initial state, and near-duplicate tasks are removed. Cross-application synthesis is supported as a limited prototype, with broader scaling left for future work.</p>
+<h3 class="subsection-title">3. Hybrid SFT Cold Start</h3>
+<p class="text">Claude Sonnet 4.6 generates demonstrations with computer-use and Bash tools. We normalize trajectories to the unified action schema and reject unsuccessful, malformed, or low-quality samples. One epoch of SFT combines approximately <strong>31K successful desktop samples</strong> with <strong>40K general-purpose multimodal samples</strong>, establishing tool semantics, task-state tracking, and a usable GUI/code routing policy.</p>
+<h3 class="subsection-title">4. Online RL with Step-balanced GSPO</h3>
+<p class="text">Starting from OS-Helix-27B, we run 1,000 online RL training steps in live Ubuntu sandboxes using rule-based terminal rewards. Cross-node environment management, asynchronous rollouts, success-rate-aware task sampling, and bounded visual-context segmentation make desktop interaction practical at training time.</p>
+<p class="text">Code actions are typically much longer than clicks or keystrokes. Standard Group Sequence Policy Optimization (GSPO) lets these token-heavy actions dominate the sample-level importance ratio. <strong>Step-balanced GSPO first averages log-importance weights within each action, then averages across action steps with equal GUI/code weights.</strong> This changes the importance-ratio aggregation while retaining GSPO’s objective and clipping structure. It removes token-count weighting at that level; it does not guarantee equal parameter-gradient norms or optimal routing.</p>
+</section>
 
-    <p class="text abstract">Real desktop automation is neither purely visual nor purely programmatic. OS-Helix unifies GUI actions and code execution in one action space. Its training pipeline composes applications with authentic artifacts, synthesizes environment-grounded tasks with independent evaluators, and learns from filtered hybrid trajectories followed by online reinforcement learning.</p>
-    <img class="wide-figure-teaser" src="assets/teaser.svg" alt="The paper's comparison of GUI-only, code-only, and hybrid computer use">
-    <p class="text abstract">A native hybrid policy can ground itself in the visible interface while using code for precise manipulation of files and structured state. The policy learns modality routing through training rather than through inference-time tool access alone.</p>
 
-    <div class="icon-row" aria-label="Jump to a section">
-      <a href="#sec:pipeline" class="icon-link"><img src="assets/icons/visual.svg" alt="" class="icon">Main<br>Pipeline</a>
-      <a href="#sec:benchmarking" class="icon-link"><img src="assets/icons/eval.svg" alt="" class="icon">Evaluation<br>Results</a>
-      <a href="#sec:analysis" class="icon-link"><img src="assets/icons/data.svg" alt="" class="icon">In-depth<br>Analysis</a>
-      <a href="#sec:case_study" class="icon-link"><img src="assets/icons/case.png" alt="" class="icon">Case<br>Study</a>
-    </div>
-    <p class="click-hint">Click a tile to jump to that section.</p>
+<section id="sec:benchmarking" class="paper-section"><h2 class="section-title">Main Experiments</h2><p class="text">We evaluate OS-Helix on <strong>OSWorld-Verified</strong> and <strong>WindowsAgentArena</strong>. The two benchmarks measure desktop task success on Ubuntu and cross-platform transfer to Windows.</p>
+<h3 class="subsection-title">OSWorld-Verified</h3>
+<p class="text">SFT raises the 27B hybrid backbone from <strong>46.50% to 62.75%</strong> (+16.25 percentage points) and the 35B-A3B backbone from <strong>42.84% to 57.27%</strong> (+14.43 points). The largest SFT gains occur in Office and multi-application Workflow tasks. RL increases the 27B average to <strong>66.44%</strong>, with its additional gains concentrated in Professional, OS, and Daily tasks. Office and Workflow do not improve further over SFT.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 1 · OSWorld-Verified: full main comparison" tabindex="0"><table class="data-table"><caption>Table 1 · OSWorld-Verified: full main comparison</caption>
+<thead><tr><th scope="col">Model / method</th><th scope="col">Setting</th><th scope="col">OS</th><th scope="col">Office</th><th scope="col">Daily</th><th scope="col">Prof.</th><th scope="col">Work.</th><th scope="col">Avg.</th></tr>
+</thead>
+<tbody><tr class="table-group"><th colspan="8" scope="colgroup">Agentic frameworks · published context</th></tr>
+<tr class=""><th scope="row">UiPath w/ GPT-5</th><td>GUI</td><td>73.91</td><td>49.52</td><td>62.12</td><td>71.43</td><td>37.30</td><td>53.69</td></tr>
+<tr class=""><th scope="row">CoAct-1 w/ GPT-5</th><td>Hybrid</td><td>75.00</td><td>62.93</td><td>57.94</td><td>71.43</td><td>47.87</td><td>59.93</td></tr>
+<tr class=""><th scope="row">GTA1 w/ GPT-5</th><td>GUI</td><td>79.17</td><td>63.91</td><td>62.56</td><td>79.59</td><td>50.91</td><td>63.41</td></tr>
+<tr class=""><th scope="row">Agent S3 w/ GPT-5</th><td>Hybrid</td><td>77.50</td><td>66.46</td><td>61.23</td><td>69.80</td><td>51.37</td><td>62.63</td></tr>
+<tr class=""><th scope="row">OS-Symphony w/ GPT-5</th><td>Hybrid</td><td>79.17</td><td>65.73</td><td>67.76</td><td>69.23</td><td>57.98</td><td>65.84</td></tr>
+<tr class="table-group"><th colspan="8" scope="colgroup">General and specialist models · published context</th></tr>
+<tr class=""><th scope="row">Claude Sonnet 4.5</th><td>GUI</td><td>70.83</td><td>72.59</td><td>61.35</td><td>63.27</td><td>49.54</td><td>62.88</td></tr>
+<tr class=""><th scope="row">OpenCUA-72B</th><td>GUI</td><td>61.13</td><td>44.73</td><td>49.95</td><td>72.58</td><td>22.16</td><td>44.91</td></tr>
+<tr class=""><th scope="row">UI-TARS</th><td>GUI</td><td>41.67</td><td>50.42</td><td>55.69</td><td>51.02</td><td>14.66</td><td>41.85</td></tr>
+<tr class=""><th scope="row">UI-TARS-2</th><td>GUI</td><td>41.67</td><td>61.11</td><td>62.12</td><td>61.22</td><td>34.13</td><td>53.10</td></tr>
+<tr class=""><th scope="row">DeepMiner-Mano-72B</th><td>GUI</td><td>66.67</td><td>63.22</td><td>52.51</td><td>83.67</td><td>24.41</td><td>53.91</td></tr>
+<tr class=""><th scope="row">EvoCUA-32B</th><td>GUI</td><td>78.26</td><td>59.79</td><td>64.55</td><td>81.63</td><td>27.89</td><td>56.73</td></tr>
+<tr class=""><th scope="row">EvoCUA-1.5-32B</th><td>GUI</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>63.20</td></tr>
+<tr class=""><th scope="row">Kimi K2.5</th><td>GUI</td><td>73.91</td><td>69.20</td><td>66.42</td><td>73.47</td><td>46.11</td><td>63.34</td></tr>
+<tr class=""><th scope="row">Kimi K2.6</th><td>GUI</td><td>79.17</td><td>80.03</td><td>77.11</td><td>81.63</td><td>54.97</td><td>73.07</td></tr>
+<tr class=""><th scope="row">Qwen3.7-Plus</th><td>GUI</td><td>79.17</td><td>82.91</td><td>74.03</td><td>73.47</td><td>59.25</td><td>73.33</td></tr>
+<tr class="table-group"><th colspan="8" scope="colgroup">Matched backbone baselines · reproduced</th></tr>
+<tr class=""><th scope="row">Qwen3.5-27B †</th><td>GUI</td><td>66.67</td><td>39.60</td><td>57.50</td><td>52.00</td><td>36.06</td><td>46.61</td></tr>
+<tr class=""><th scope="row">Qwen3.5-27B †</th><td>Hybrid</td><td>66.67</td><td>39.26</td><td>58.79</td><td>49.96</td><td>38.29</td><td>46.50</td></tr>
+<tr class=""><th scope="row">Qwen3.5-35B-A3B †</th><td>GUI</td><td>37.50</td><td>46.92</td><td>44.57</td><td>38.77</td><td>25.65</td><td>39.20</td></tr>
+<tr class=""><th scope="row">Qwen3.5-35B-A3B †</th><td>Hybrid</td><td>69.57</td><td>40.94</td><td>46.21</td><td>52.22</td><td>31.01</td><td>42.84</td></tr>
+<tr class="table-group"><th colspan="8" scope="colgroup">OS-Helix · native hybrid policies</th></tr>
+<tr class="highlight"><th scope="row">OS-Helix-35B-A3B</th><td>Hybrid</td><td>60.87<span class="score-delta delta-down" aria-label="-8.7 percentage points">(↓8.7)</span></td><td>70.00<span class="score-delta delta-up" aria-label="+29.1 percentage points">(↑29.1)</span></td><td>52.19<span class="score-delta delta-up" aria-label="+6.0 percentage points">(↑6.0)</span></td><td>56.31<span class="score-delta delta-up" aria-label="+4.1 percentage points">(↑4.1)</span></td><td>45.14<span class="score-delta delta-up" aria-label="+14.1 percentage points">(↑14.1)</span></td><td>57.27<span class="score-delta delta-up" aria-label="+14.4 percentage points">(↑14.4)</span></td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B</th><td>Hybrid</td><td>75.00<span class="score-delta delta-up" aria-label="+8.3 percentage points">(↑8.3)</span></td><td>72.60<span class="score-delta delta-up" aria-label="+33.3 percentage points">(↑33.3)</span></td><td>58.32<span class="score-delta delta-down" aria-label="-0.5 percentage points">(↓0.5)</span></td><td>56.49<span class="score-delta delta-up" aria-label="+6.5 percentage points">(↑6.5)</span></td><td>54.28<span class="score-delta delta-up" aria-label="+16.0 percentage points">(↑16.0)</span></td><td>62.75<span class="score-delta delta-up" aria-label="+16.3 percentage points">(↑16.3)</span></td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B-RL</th><td>Hybrid</td><td>82.61<span class="score-delta delta-up" aria-label="+15.9 percentage points">(↑15.9)</span></td><td>69.14<span class="score-delta delta-up" aria-label="+29.9 percentage points">(↑29.9)</span></td><td>65.01<span class="score-delta delta-up" aria-label="+6.2 percentage points">(↑6.2)</span></td><td>79.59<span class="score-delta delta-up" aria-label="+29.6 percentage points">(↑29.6)</span></td><td>53.32<span class="score-delta delta-up" aria-label="+15.0 percentage points">(↑15.0)</span></td><td>66.44<span class="score-delta delta-up" aria-label="+19.9 percentage points">(↑19.9)</span></td></tr>
+</tbody></table></div><p class="table-note">† Reproduced in the paper; other baselines are taken from the official leaderboard as reported in the manuscript. Office: Calc, Impress, Writer. Daily: Chrome, Thunderbird, VLC. Prof.: GIMP, VS Code. Work.: multi-application workflows. Published baseline budgets and harnesses may differ. Green ↑ and red ↓ annotations reproduce absolute percentage-point changes from the paper relative to each model’s matched Hybrid backbone.</p></div>
+<h3 class="subsection-title">WindowsAgentArena</h3>
+<p class="text">Ubuntu-trained OS-Helix transfers to Windows with <strong>Python-only code actions</strong> and a prompt adaptation, without Windows-specific training. The RL model reaches <strong>63.87%</strong>: +7.46 points over the matched hybrid backbone and +5.92 over SFT. The detailed domain results below extend the main comparison with the breakdown from Appendix E.1.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Tables 2 &amp; 12 · WindowsAgentArena: overall and domain results" tabindex="0"><table class="data-table"><caption>Tables 2 &amp; 12 · WindowsAgentArena: overall and domain results</caption>
+<thead><tr><th scope="col">Model / method</th><th scope="col">Setting</th><th scope="col">Steps</th><th scope="col">Office</th><th scope="col">Web</th><th scope="col">Sys.</th><th scope="col">Code</th><th scope="col">Media</th><th scope="col">Util.</th><th scope="col">Avg.</th></tr>
+</thead>
+<tbody><tr class="table-group"><th colspan="10" scope="colgroup">Agentic frameworks · published context</th></tr>
+<tr class=""><th scope="row">Agent S3 w/ GPT-5</th><td>Hybrid</td><td>50</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>54.10</td></tr>
+<tr class=""><th scope="row">Agent S3 w/ GPT-5</th><td>Hybrid</td><td>100</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>56.60</td></tr>
+<tr class=""><th scope="row">OS-Symphony w/ GPT-5-Mini</th><td>Hybrid</td><td>50</td><td>42.86</td><td>73.00</td><td>79.17</td><td>68.42</td><td>48.66</td><td>66.67</td><td>62.15</td></tr>
+<tr class=""><th scope="row">OS-Symphony w/ GPT-5</th><td>Hybrid</td><td>50</td><td>54.76</td><td>73.00</td><td>75.00</td><td>42.11</td><td>70.09</td><td>75.00</td><td>63.45</td></tr>
+<tr class="table-group"><th colspan="10" scope="colgroup">General and specialist models · published context</th></tr>
+<tr class=""><th scope="row">Qwen3-VL-32B-Thinking</th><td>GUI</td><td>50</td><td>17.07</td><td>56.33</td><td>68.18</td><td>64.29</td><td>29.33</td><td>63.64</td><td>45.95</td></tr>
+<tr class=""><th scope="row">UI-TARS-1.5-7B</th><td>GUI</td><td>50</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>42.10</td></tr>
+<tr class=""><th scope="row">UI-TARS-2</th><td>GUI</td><td>50</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>50.60</td></tr>
+<tr class=""><th scope="row">UI-Mate-27B</th><td>GUI</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>66.20</td></tr>
+<tr class=""><th scope="row">EvoCUA-32B</th><td>GUI</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>56.48</td></tr>
+<tr class=""><th scope="row">EvoCUA-1.5-32B</th><td>GUI</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>62.10</td></tr>
+<tr class="table-group"><th colspan="10" scope="colgroup">Matched backbones and OS-Helix</th></tr>
+<tr class=""><th scope="row">Qwen3.5-27B †</th><td>GUI</td><td>50</td><td>30.23</td><td>36.33</td><td>62.50</td><td>50.00</td><td>28.41</td><td>50.00</td><td>40.82</td></tr>
+<tr class=""><th scope="row">Qwen3.5-27B †</th><td>Hybrid</td><td>50</td><td>41.86</td><td>63.00</td><td>83.33</td><td>54.17</td><td>42.70</td><td>66.67</td><td>56.41</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B</th><td>Hybrid</td><td>50</td><td>39.53</td><td>66.33</td><td>91.67</td><td>54.17</td><td>39.75</td><td>75.00</td><td>57.95</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B-RL</th><td>Hybrid</td><td>50</td><td>39.53</td><td>76.33</td><td>75.00</td><td>73.91</td><td>65.81</td><td>75.00</td><td>63.87</td></tr>
+</tbody></table></div><p class="table-note">† Reproduced in the paper. Office: Writer and Calc; Web: Edge and Chrome; Sys.: Windows system tasks; Code: VS Code; Media: VLC; Util.: Windows utilities. — means not reported. The 100-step Agent S3 result is shown with its different budget explicitly labeled.</p></div>
+</section>
 
-    <h1 class="text" id="sec:pipeline">OS-Helix Framework</h1>
-    <img class="wide-figure" src="assets/method.svg" alt="Four-stage OS-Helix pipeline">
-    <p class="text">OS-Helix has four stages. Application–artifact composition first creates executable desktop states. Environment exploration then produces grounded instructions, while a separate evaluator makes each task verifiable. Filtered GUI/code trajectories provide a supervised cold start. Finally, the policy improves through online interaction with live desktop environments.</p>
 
-    <h1 class="text">Application–Artifact Composition</h1>
-    <p class="text">Applications are paired with authentic artifacts through a compatibility graph. The resulting Ubuntu states are reproducible and provide realistic files and interfaces for task synthesis.</p>
+<section id="sec:ablation" class="paper-section"><h2 class="section-title">Ablation Studies</h2><p class="text">Controlled ablations separate the effects of data quality, training stages, the RL objective, and hybrid supervision. Unless noted otherwise, these experiments use Qwen3.5-27B and the OSWorld evaluation harness from the main experiments.</p>
+<h3 class="subsection-title">Data Robustness</h3>
+<p class="text">On the same 800 synthesized tasks, trajectories from both teachers improve over the 46.50% hybrid backbone, while the stronger teacher yields a larger gain. Removing all samples from the nine OSWorld application domains retains <strong>62.31%</strong> success versus 62.75% with the full desktop pool, supporting transfer beyond those application domains.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 3a · Trajectory teacher, same 800 tasks" tabindex="0"><table class="data-table"><caption>Table 3a · Trajectory teacher, same 800 tasks</caption>
+<thead><tr><th scope="col">Teacher</th><th scope="col">Success (%)</th><th scope="col">Gain vs. backbone (pp)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Kimi K2.5</th><td>54.03</td><td>+7.53</td></tr>
+<tr class=""><th scope="row">Claude Sonnet 4.6</th><td>58.77</td><td>+12.27</td></tr>
+</tbody></table></div></div>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 3b · Removal of OSWorld application domains" tabindex="0"><table class="data-table"><caption>Table 3b · Removal of OSWorld application domains</caption>
+<thead><tr><th scope="col">Desktop data</th><th scope="col">Desktop samples</th><th scope="col">Success (%)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Full synthesized pool</th><td>~31K</td><td>62.75</td></tr>
+<tr class=""><th scope="row">Nine application domains removed</th><td>~17K</td><td>62.31</td></tr>
+</tbody></table></div></div>
+<h3 class="subsection-title">Training Stages and RL Objective</h3>
+<p class="text"><strong>SFT provides the main improvement.</strong> RL alone adds only 1.70 points, while SFT followed by RL achieves the best result. With initialization, data, sampling, reward, and optimization budget held fixed, standard GSPO degrades performance and shifts toward code-heavy behavior; Step-balanced GSPO improves success while preserving a code-action fraction close to the SFT policy.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 4a · Training-stage attribution" tabindex="0"><table class="data-table"><caption>Table 4a · Training-stage attribution</caption>
+<thead><tr><th scope="col">Variant</th><th scope="col">SFT</th><th scope="col">RL</th><th scope="col">Success (%)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Hybrid backbone</th><td>No</td><td>No</td><td>46.50</td></tr>
+<tr class=""><th scope="row">RL only</th><td>No</td><td>Yes</td><td>48.20</td></tr>
+<tr class=""><th scope="row">SFT only</th><td>Yes</td><td>No</td><td>62.75</td></tr>
+<tr class="highlight"><th scope="row">SFT → RL</th><td>Yes</td><td>Yes</td><td>66.44</td></tr>
+</tbody></table></div></div>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 4b · Controlled RL-objective comparison" tabindex="0"><table class="data-table"><caption>Table 4b · Controlled RL-objective comparison</caption>
+<thead><tr><th scope="col">RL objective</th><th scope="col">Success (%)</th><th scope="col">Change vs. SFT (pp)</th><th scope="col">Code actions (%)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Standard GSPO</th><td>60.47</td><td>−2.28</td><td>40.0</td></tr>
+<tr class="highlight"><th scope="row">Step-balanced GSPO</th><td>66.44</td><td>+3.69</td><td>26.1</td></tr>
+</tbody></table></div><p class="table-note">The SFT starting point has a 27.9% code-action rate. Code-action rate is a behavioral diagnostic, not a target to maximize.</p></div>
+<h3 class="subsection-title">Code Access versus Learned Coordination</h3>
+<p class="text">The same OS-Helix checkpoint retains useful GUI competence without code (52.13%) and gains <strong>10.62 points</strong> when code is available. At a fixed 10K-sample SFT budget with code enabled for both variants at inference, hybrid demonstrations outperform GUI-only demonstrations by <strong>3.05 points</strong>. These comparisons separate learning to coordinate tools from merely exposing an extra tool.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 5a · Inference-time code access" tabindex="0"><table class="data-table"><caption>Table 5a · Inference-time code access</caption>
+<thead><tr><th scope="col">Policy</th><th scope="col">Code access</th><th scope="col">Success (%)</th><th scope="col">Code actions (%)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Qwen3.5-27B</th><td>No</td><td>42.59</td><td>—</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B</th><td>No</td><td>52.13</td><td>—</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-27B</th><td>Yes</td><td>62.75</td><td>27.9</td></tr>
+</tbody></table></div><p class="table-note">This is the dedicated code-access ablation reported in Table 5a; its Qwen3.5 no-code score is distinct from the GUI baseline in Table 1.</p></div>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 5b · SFT modality at a fixed sample budget" tabindex="0"><table class="data-table"><caption>Table 5b · SFT modality at a fixed sample budget</caption>
+<thead><tr><th scope="col">SFT data</th><th scope="col">Samples</th><th scope="col">Code access</th><th scope="col">Success (%)</th><th scope="col">Code actions (%)</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">GUI only</th><td>10K</td><td>Yes</td><td>57.56</td><td>11.7</td></tr>
+<tr class=""><th scope="row">Hybrid GUI/code</th><td>10K</td><td>Yes</td><td>60.61</td><td>37.1</td></tr>
+</tbody></table></div></div>
+</section>
 
-    <h1 class="text">Environment-Grounded Task Synthesis</h1>
-    <p class="text">An Exploration Agent observes the current environment to propose a task and its success conditions. A separate Evaluator Agent checks the final state without prescribing whether the solution should use GUI actions, code, or both.</p>
 
-    <h1 class="text">Step-balanced Reinforcement Learning</h1>
-    <p class="text">After supervised fine-tuning on filtered hybrid trajectories, OS-Helix trains in live desktop sandboxes. Step-balanced GSPO gives GUI and code action steps comparable weight, preventing long code actions from dominating mixed-action optimization.</p>
-    <hr>
+<section id="sec:discussion" class="paper-section"><h2 class="section-title">Discussion</h2><h3 class="subsection-title">Accuracy and Interaction Efficiency</h3>
+<p class="text">OS-Helix-27B completes tasks with fewer interactions while covering more successful tasks under small step budgets. The analysis includes all tasks, each policy’s own successes, and outcome-matched subsets where all compared policies either succeed or fail. Matching outcomes helps distinguish shorter execution from simply solving an easier subset.</p>
+<figure class="paper-figure"><a href="assets/efficiency.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Interaction steps and cumulative success under different step budgets"><img src="assets/efficiency.svg" alt="Interaction steps and cumulative success under different step budgets" loading="lazy" width="822" height="227"></a><figcaption>Figure 3 · Efficiency on OSWorld. The analysis compares the GUI backbone, hybrid backbone, and OS-Helix-27B. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<h3 class="subsection-title">Why Step Balance Matters</h3>
+<p class="text">GUI clicks and keystrokes are short, while code actions can contain many more tokens. Standard GSPO therefore gives long code steps disproportionate influence over the sample-level importance ratio. Figure 4(a) shows the resulting behavioral drift: under matched training conditions, standard GSPO increasingly favors code, whereas Step-balanced GSPO keeps the code-action fraction lower and more stable over the shared observed horizon. In the controlled ablation, standard GSPO reaches 60.47% success with 40.0% code actions; step-balanced training reaches <strong>66.44%</strong> with 26.1% code actions, close to the SFT policy’s 27.9%. Figure 4(b) further shows broader repeated-sampling coverage: RL raises Pass@3 from 70.88% to <strong>76.44%</strong> (+5.56 points; paired-bootstrap 95% confidence interval [2.24, 8.97]). Together, these results support balancing action steps during optimization rather than rewarding a shift toward more code use.</p>
+<figure class="paper-figure"><a href="assets/training-analysis.png" target="_blank" rel="noopener" aria-label="Open full-size figure: Code-action rates, Pass@k, SFT scaling, general-data scaling, and instruction similarity distributions"><img src="assets/training-analysis.png" alt="Code-action rates, Pass@k, SFT scaling, general-data scaling, and instruction similarity distributions" loading="lazy" width="1203" height="528"></a><figcaption>Figure 4 · Training dynamics and coverage. Standard GSPO drifts toward code-intensive actions, while step-balanced training remains more stable over the observed horizon. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<h3 class="subsection-title">Training Scaling and Data Distributions</h3>
+<p class="text">Figure 4(c) tracks Workflow and overall success across checkpoints from the first SFT epoch; Figure 4(d) holds desktop supervision fixed and varies the proportion of the 40K general-purpose multimodal pool. Both studies show overall gains as supervision grows, supporting complementary contributions from hybrid desktop trajectories and general-purpose data. Panels (e)–(f) compare instruction-embedding similarity distributions within the synthesized corpus and against OSWorld. Together with the domain-removal ablation, these distributions provide evidence consistent with transferable desktop-task structure; instruction similarity alone does not establish the absence of every form of overlap.</p>
 
-    <div class="viusal-representation-block">
-      <h1 class="text" id="sec:benchmarking">Main Experiments</h1>
-      <h2 class="text">OSWorld-Verified</h2>
-      <p class="text">The paper evaluates OS-Helix on 361 OSWorld tasks after excluding eight Google Drive tasks. The 27B model improves from 46.50% for its matched Qwen3.5-27B hybrid baseline to 62.75% after SFT and 66.44% after RL.</p>
-      <div class="table-container">
-        <table class="data-table">
-          <caption>OSWorld-Verified success rate (%)</caption>
-          <thead><tr><th scope="col">Model</th><th scope="col">Setting</th><th scope="col">Success rate</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Qwen3.5-27B</th><td>Hybrid</td><td>46.50</td></tr>
-            <tr><th scope="row">OS-Helix-27B</th><td>Hybrid SFT</td><td>62.75</td></tr>
-            <tr class="highlight"><th scope="row">OS-Helix-27B-RL</th><td>Hybrid SFT + RL</td><td>66.44</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <h2 class="text">WindowsAgentArena</h2>
-      <p class="text">With a 50-step budget, OS-Helix-27B-RL reaches 63.87% on WindowsAgentArena, compared with 57.95% for OS-Helix-27B and 56.41% for the reproduced Qwen3.5-27B baseline.</p>
-      <div class="table-container">
-        <table class="data-table">
-          <caption>WindowsAgentArena success rate (%), 50-step budget</caption>
-          <thead><tr><th scope="col">Model</th><th scope="col">Success rate</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Qwen3.5-27B</th><td>56.41</td></tr>
-            <tr><th scope="row">OS-Helix-27B</th><td>57.95</td></tr>
-            <tr class="highlight"><th scope="row">OS-Helix-27B-RL</th><td>63.87</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <hr>
+<h3 class="subsection-title">Additional Experiments</h3><p class="text">The following diagnostics use <strong>Qwen3-VL-32B backbones and SFT only</strong>, with the same data recipe. They probe transfer across model families and the role of supervision and context; they do not measure the contribution of the Qwen3.5-based online RL stage.</p>
+<h3 class="subsection-title">Backbone Replacement</h3>
+<p class="text">For the Instruct backbone, code access alone reduces success from 34.17% to 32.68%, whereas hybrid SFT raises it to <strong>50.56%</strong>. For the Thinking backbone, SFT improves the matched hybrid baseline from 42.88% to <strong>51.67%</strong>. Gains span several domains, although the Thinking model’s Professional score decreases, showing that capability changes remain model-dependent.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 14 · OSWorld backbone replacement, 50 steps" tabindex="0"><table class="data-table"><caption>Table 14 · OSWorld backbone replacement, 50 steps</caption>
+<thead><tr><th scope="col">Model</th><th scope="col">Setting</th><th scope="col">OS</th><th scope="col">Office</th><th scope="col">Daily</th><th scope="col">Prof.</th><th scope="col">Work.</th><th scope="col">Avg.</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Qwen3-VL-32B-Instruct †</th><td>GUI</td><td>41.67</td><td>31.54</td><td>51.23</td><td>44.90</td><td>15.57</td><td>34.17</td></tr>
+<tr class=""><th scope="row">Qwen3-VL-32B-Instruct †</th><td>Hybrid</td><td>50.00</td><td>33.25</td><td>39.31</td><td>38.78</td><td>18.78</td><td>32.68</td></tr>
+<tr class=""><th scope="row">Qwen3-VL-32B-Thinking †</th><td>GUI</td><td>58.33</td><td>35.84</td><td>54.44</td><td>55.10</td><td>18.71</td><td>39.08</td></tr>
+<tr class=""><th scope="row">Qwen3-VL-32B-Thinking †</th><td>Hybrid</td><td>62.50</td><td>40.97</td><td>49.81</td><td>53.85</td><td>27.95</td><td>42.88</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-32B</th><td>Hybrid</td><td>66.67<span class="score-delta delta-up" aria-label="+16.7 percentage points">(↑16.7)</span></td><td>52.91<span class="score-delta delta-up" aria-label="+19.7 percentage points">(↑19.7)</span></td><td>56.14<span class="score-delta delta-up" aria-label="+16.8 percentage points">(↑16.8)</span></td><td>51.02<span class="score-delta delta-up" aria-label="+12.2 percentage points">(↑12.2)</span></td><td>38.54<span class="score-delta delta-up" aria-label="+19.8 percentage points">(↑19.8)</span></td><td>50.56<span class="score-delta delta-up" aria-label="+17.9 percentage points">(↑17.9)</span></td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-32B-Thinking</th><td>Hybrid</td><td>70.83<span class="score-delta delta-up" aria-label="+8.3 percentage points">(↑8.3)</span></td><td>52.91<span class="score-delta delta-up" aria-label="+11.9 percentage points">(↑11.9)</span></td><td>61.21<span class="score-delta delta-up" aria-label="+11.4 percentage points">(↑11.4)</span></td><td>51.02<span class="score-delta delta-down" aria-label="-2.8 percentage points">(↓2.8)</span></td><td>37.35<span class="score-delta delta-up" aria-label="+9.4 percentage points">(↑9.4)</span></td><td>51.67<span class="score-delta delta-up" aria-label="+8.8 percentage points">(↑8.8)</span></td></tr>
+</tbody></table></div><p class="table-note">† Reproduced baselines. These are Qwen3-VL diagnostics, separate from the main Qwen3.5 model family. Green ↑ and red ↓ show absolute percentage-point changes relative to the corresponding Instruct or Thinking Hybrid backbone.</p></div>
+<h3 class="subsection-title">Grounding Ability</h3>
+<p class="text">Isolated visual grounding does not improve with this recipe: the trained 32B model scores lower than the reproduced backbone on both grounding benchmarks. The end-to-end gains therefore coexist with a grounding trade-off and are consistent with better task-state management and modality routing, rather than stronger pixel localization alone.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 13 · Grounding benchmarks" tabindex="0"><table class="data-table"><caption>Table 13 · Grounding benchmarks</caption>
+<thead><tr><th scope="col">Model</th><th scope="col">OSWorld-G</th><th scope="col">ScreenSpot-V2</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Qwen3-VL-32B-Instruct (reported)</th><td>65.10</td><td>95.80</td></tr>
+<tr class=""><th scope="row">Qwen3-VL-32B-Instruct (reproduced)</th><td>61.35</td><td>95.05</td></tr>
+<tr class="highlight"><th scope="row">OS-Helix-32B</th><td>57.21</td><td>93.47</td></tr>
+</tbody></table></div></div>
+<h3 class="subsection-title">Reasoning Context and Data Filtering</h3>
+<p class="text">Removing reasoning traces from training or inference lowers success by roughly 12.8 points. Removing only historical reasoning from training is less damaging, but still costs 7.34 points. Adding rejected failure samples reduces performance to 47.06%. These experiments support the roles of structured context and filtered demonstrations in maintaining coherent multi-step execution.</p>
+<div class="table-block"><div class="table-container" role="region" aria-label="Table 15 · Training recipe and inference context" tabindex="0"><table class="data-table"><caption>Table 15 · Training recipe and inference context</caption>
+<thead><tr><th scope="col">Training recipe</th><th scope="col">Inference context</th><th scope="col">OS</th><th scope="col">Office</th><th scope="col">Daily</th><th scope="col">Prof.</th><th scope="col">Work.</th><th scope="col">Avg.</th></tr>
+</thead>
+<tbody><tr class=""><th scope="row">Normal</th><td>Normal</td><td>66.67</td><td>52.91</td><td>56.14</td><td>51.02</td><td>38.54</td><td>50.56</td></tr>
+<tr class=""><th scope="row">Normal</th><td>No reasoning (CoT)</td><td>54.17<span class="score-delta delta-down" aria-label="-12.5 percentage points">(↓12.5)</span></td><td>28.98<span class="score-delta delta-down" aria-label="-23.9 percentage points">(↓23.9)</span></td><td>53.58<span class="score-delta delta-down" aria-label="-2.6 percentage points">(↓2.6)</span></td><td>38.77<span class="score-delta delta-down" aria-label="-12.3 percentage points">(↓12.3)</span></td><td>31.43<span class="score-delta delta-down" aria-label="-7.1 percentage points">(↓7.1)</span></td><td>37.82<span class="score-delta delta-down" aria-label="-12.7 percentage points">(↓12.7)</span></td></tr>
+<tr class=""><th scope="row">No reasoning (CoT)</th><td>Normal</td><td>50.00<span class="score-delta delta-down" aria-label="-16.7 percentage points">(↓16.7)</span></td><td>35.55<span class="score-delta delta-down" aria-label="-17.4 percentage points">(↓17.4)</span></td><td>46.99<span class="score-delta delta-down" aria-label="-9.2 percentage points">(↓9.2)</span></td><td>38.77<span class="score-delta delta-down" aria-label="-12.3 percentage points">(↓12.3)</span></td><td>28.87<span class="score-delta delta-down" aria-label="-9.7 percentage points">(↓9.7)</span></td><td>37.74<span class="score-delta delta-down" aria-label="-12.8 percentage points">(↓12.8)</span></td></tr>
+<tr class=""><th scope="row">No historical reasoning</th><td>Normal</td><td>60.87<span class="score-delta delta-down" aria-label="-5.8 percentage points">(↓5.8)</span></td><td>43.51<span class="score-delta delta-down" aria-label="-9.4 percentage points">(↓9.4)</span></td><td>54.19<span class="score-delta delta-down" aria-label="-2.0 percentage points">(↓2.0)</span></td><td>39.80<span class="score-delta delta-down" aria-label="-11.2 percentage points">(↓11.2)</span></td><td>31.30<span class="score-delta delta-down" aria-label="-7.2 percentage points">(↓7.2)</span></td><td>43.22<span class="score-delta delta-down" aria-label="-7.3 percentage points">(↓7.3)</span></td></tr>
+<tr class=""><th scope="row">Add failure data</th><td>Normal</td><td>54.17<span class="score-delta delta-down" aria-label="-12.5 percentage points">(↓12.5)</span></td><td>48.67<span class="score-delta delta-down" aria-label="-4.2 percentage points">(↓4.2)</span></td><td>54.80<span class="score-delta delta-down" aria-label="-1.3 percentage points">(↓1.3)</span></td><td>50.28<span class="score-delta delta-down" aria-label="-0.7 percentage points">(↓0.7)</span></td><td>35.16<span class="score-delta delta-down" aria-label="-3.4 percentage points">(↓3.4)</span></td><td>47.06<span class="score-delta delta-down" aria-label="-3.5 percentage points">(↓3.5)</span></td></tr>
+</tbody></table></div><p class="table-note">CoT means chain-of-thought reasoning text. “No historical reasoning” removes historical CoT from training samples while retaining current-step reasoning and action text. Green ↑ and red ↓ show absolute percentage-point changes relative to the Normal training / Normal inference recipe.</p></div>
 
-    <div id="sec:analysis">
-      <h1 class="text">Analysis</h1>
-      <h2 class="text">How efficiently does the agent act?</h2>
-      <p class="text">Across complete tasks and outcome-matched subsets, the trained policy uses fewer interactions than the matched baselines. It also covers more successful tasks under smaller step budgets.</p>
-      <img class="wide-figure" src="assets/efficiency.svg" alt="Mean interaction steps and cumulative success by step budget">
-      <h2 class="text">Why balance GUI and code steps?</h2>
-      <p class="text">Under the paper's controlled RL comparison, standard GSPO reduces success to 60.47% and raises the code-action rate to 40.0%. Step-balanced GSPO reaches 66.44% while keeping the code-action rate at 26.1%, close to the 27.9% SFT starting point.</p>
-    </div>
-    <hr>
+</section>
 
-    <div id="sec:case_study">
-      <h1 class="text">Case Study</h1>
-      <h2 class="text">GUI and code in one workflow</h2>
-      <p class="text">Representative trajectories show the agent moving between visible interfaces and programmatic operations as the task changes. GUI interaction provides grounded observations; code handles precise or repeatable steps.</p>
-      <img class="wide-figure" src="assets/case-study.svg" alt="Representative GUI-to-code and code-to-GUI trajectories">
-    </div>
-    <hr>
 
-    <div id="conclusion">
-      <h1 class="text">Conclusion</h1>
-      <p class="text">OS-Helix trains a native hybrid computer-using agent through reproducible desktop states, verifiable tasks, filtered GUI/code demonstrations, and online RL. Its results support learned coordination between the two action modalities and show transfer beyond the training platform.</p>
-    </div>
-  </d-article>
-  <footer><a href="#top">Back to top ↑</a></footer>
+<section id="sec:case_study" class="paper-section"><h2 class="section-title">Case Studies and Behavioral Analysis</h2><h3 class="subsection-title">GUI and Code as Complementary Tools</h3>
+<figure class="paper-figure"><a href="assets/case-study.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Representative trajectories switching between GUI interaction and code execution"><img src="assets/case-study.svg" alt="Representative trajectories switching between GUI interaction and code execution" loading="lazy" width="935" height="439"></a><figcaption>Representative hybrid workflows from the paper. Each modality supplies task-relevant information or operations to the other. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<p class="text">The synthesis case studies make verification concrete. An office/code task starts from a vehicle spreadsheet, asks for efficiency labels, and then requires a runnable Python audit script. Its evaluator separately checks spreadsheet contents, data-derived script logic, and executed output. A media task transfers persistent configuration between recording and video-editing tools. Both illustrate component-wise terminal evaluation rather than prescribing one action path.</p>
+<h3 class="subsection-title">Cross-Modal Verification and Repair</h3>
+<p class="text">In a spreadsheet-chart example, code creates a chart, the GUI reveals a missing data series, and code repairs it. In the reverse direction, the agent edits a slide through the GUI and inspects the saved file with code to verify notes and title formatting. These traces show switching for verification and repair, beyond selecting one tool at the start of a task.</p>
+<figure class="paper-figure"><a href="assets/cross-modal-verification.png" target="_blank" rel="noopener" aria-label="Open full-size figure: GUI feedback repairs a code-generated chart, and code verifies GUI slide edits"><img src="assets/cross-modal-verification.png" alt="GUI feedback repairs a code-generated chart, and code verifies GUI slide edits" loading="lazy" width="1194" height="519"></a><figcaption>Figure 7 · Successful cross-modality solve-and-verify cases. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<h3 class="subsection-title">Failure Modes at the GUI–Code Boundary</h3>
+<p class="text">Hybrid execution still requires consistent visual and persistent state. One failure loses row shading during a Calc-to-Writer conversion and misdiagnoses the visual mismatch as missing currency symbols. Another saves a code-side presentation edit without incorporating an unsaved GUI edit, then discards the earlier change. These cases motivate evaluators that cover visual intent and policies that reconcile in-memory and on-disk state before switching modalities.</p>
+<figure class="paper-figure"><a href="assets/failure-analysis.png" target="_blank" rel="noopener" aria-label="Open full-size figure: Formatting loss and unsaved GUI state cause hybrid execution failures"><img src="assets/failure-analysis.png" alt="Formatting loss and unsaved GUI state cause hybrid execution failures" loading="lazy" width="1194" height="543"></a><figcaption>Figure 8 · Failures involving visual equivalence and cross-modality state handoffs. <span class="figure-hint">Click to enlarge.</span></figcaption></figure>
+<p class="text">A manual audit of <strong>30 representative Workflow trajectories</strong> finds grounded GUI/code handoffs in 27, including cross-modal verification or repair in 22. Outcomes are 21 successes, four partial successes, and five failures. This is process-level evidence from a selected subset; the frequencies are not estimates for the entire benchmark, and they do not establish optimal routing.</p>
+</section>
+
+
+<section id="sec:limitations" class="paper-section"><h2 class="section-title">Limitations and Future Work</h2><p class="text">The current environment inventory cannot capture the diversity of real machines, private artifacts, versions, and user configurations. Rule-based verification can be brittle, while visual evaluators may miss fine details; the RL reward therefore uses rule-based checks only. Broader evaluator validation, repair, and robustness to reward hacking remain important.</p>
+<p class="text">Online RL is currently demonstrated on the dense 27B model under limited compute. Scaling training and extending stable optimization to mixture-of-experts models remain open. Future directions include wider Windows and macOS coverage, stronger cross-application synthesis, self-improvement through agent-generated trajectories, and benchmarks that jointly assess correctness, interaction efficiency, modality choice, and safety.</p>
+</section>
+
+
+<section id="sec:cite" class="paper-section">
+  <h2 class="section-title">Cite Us</h2>
+  <div class="citation-block"><div class="citation-label">BibTeX</div><pre aria-label="OS-Helix BibTeX citation"><code class="language-bibtex">@misc{yang2026oshelix,
+  title = {OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents},
+  author = {Bowen Yang and Kaiming Jin and Zichen Ding and Zhenyu Wu and Zehao Li and Zhoumianze Liu and Kanzhi Cheng and Fangzhi Xu and Yanan Sun and Qiushi Sun and Yu Qiao},
+  year = {2026},
+  url = {https://github.com/OS-Copilot/OS-Helix}
+}</code></pre></div>
+</section>
+
+
+
+</d-article></main><footer><a href="#top">Back to top ↑</a><p>OS-Helix · Native GUI/code coordination</p></footer>
 </body>
 </html>
