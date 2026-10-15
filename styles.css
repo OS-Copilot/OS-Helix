@@ -52,13 +52,13 @@ sup { font-size: .7em; }
 .affiliation { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
 .affiliation img { width: 100%; height: 67px; object-fit: contain; }
 .affiliation span { color: #526775; font: .7rem/1.5 Arial, sans-serif; }
-.result-strip { display: grid; grid-template-columns: repeat(4,1fr); margin: 36px 0 26px; padding: 25px 0; background: #f3f9fa; border: 1px solid #e1edef; border-radius: 16px; }
+.result-strip { display: grid; grid-template-columns: repeat(4,1fr); margin: 36px 0 0; padding: 25px 0; background: #f3f9fa; border: 1px solid #e1edef; border-radius: 16px; }
 .result-strip > div { text-align: center; display: flex; flex-direction: column; padding: 0 14px; border-right: 1px solid var(--line); }
 .result-strip > div:last-child { border: 0; }
 .result-strip strong { color: #247c85; font: 700 clamp(1.7rem,2.8vw,2.7rem)/1.2 Arial,sans-serif; letter-spacing: -.04em; }
 .result-strip strong span { font-size: .52em; letter-spacing: 0; }
 .result-strip > div > span { font: 600 .88rem/1.4 Arial,sans-serif; margin-top: 10px; }
-.result-strip small { color: var(--muted); font: .73rem/1.4 Arial,sans-serif; margin-top: 4px; }
+.result-note { color: var(--muted); font: .78rem/1.55 Arial,sans-serif; text-align: center; margin: 12px auto 30px; }
 .section-nav { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 6px; margin: 0; min-width: 0; flex: 1; }
 .section-nav a { text-decoration: none; font: 600 .79rem/1.4 Arial,sans-serif; padding: 8px 10px; background: transparent; border: 1px solid transparent; border-radius: 20px; color: #e7f6f7; }
 .section-nav a:hover { background: #ffffff18; border-color: #c4e9ec55; }

@@ -13,6 +13,6 @@ Institution marks identify author affiliations; their trademarks belong to the r
 
 Related-project icons: https://os-copilot.github.io/OSReward-Home/ (public/logos/projects/).
 
-`training-analysis.png`, `cross-modal-verification.png`, and `failure-analysis.png` are crops of Figures 4, 7, and 8 in the supplied OS-Helix manuscript (PDF pages 9, 40, and 41). Existing paper figures and hero artwork are retained from the webpage branch.
+`training-analysis.svg`, `cross-modal-verification.svg`, and `failure-analysis.svg` were converted from the supplied single-figure PDFs. `case-study.svg` already matches the supplied `case_study_coordination.pdf`. Existing paper figures and hero artwork are retained from the webpage branch.
 
 The color Hugging Face mark in `assets/icons/huggingface-color.svg` is sourced from https://huggingface.co/front/assets/huggingface_logo-noborder.svg. Existing arXiv and GitHub glyphs use burgundy and purple fills respectively to coordinate with their resource buttons.
