@@ -116,3 +116,5 @@ a.button-code:hover { background: #e6daf7; }
 .button-models img { width: 22px; height: 21px; }
 
 @media (max-width: 760px) { .result-strip > div > span { font-size: .72rem; } .result-strip > div { padding-inline: 8px; } }
+
+a.button-paper:hover { background: #ffe0e1; color: #8b2528; }
