@@ -3,6 +3,7 @@
 # OS-Helix
 ### Unifying GUI Interaction and Code Execution in Native Computer-Using Agents
 
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2610.22234-B31B1B?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2610.22234)
 [![Project Homepage](https://img.shields.io/badge/Project-Homepage-287b97?style=for-the-badge)](https://os-copilot.github.io/OS-Helix)
 ![Code: Coming Soon](https://img.shields.io/badge/Code-Coming%20Soon-64748b?style=for-the-badge)
 ![Data: Coming Soon](https://img.shields.io/badge/Data-Coming%20Soon-64748b?style=for-the-badge)
@@ -312,6 +313,6 @@ Online RL is currently demonstrated on the dense 27B model under limited compute
   title = {OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents},
   author = {Bowen Yang and Kaiming Jin and Zichen Ding and Zhenyu Wu and Zehao Li and Zhoumianze Liu and Kanzhi Cheng and Fangzhi Xu and Yanan Sun and Qiushi Sun and Yu Qiao},
   year = {2026},
-  url = {https://github.com/OS-Copilot/OS-Helix}
+  url = {https://arxiv.org/abs/2610.22234}
 }
 ```
