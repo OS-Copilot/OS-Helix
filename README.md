@@ -6,8 +6,8 @@
 [![Paper](https://img.shields.io/badge/Paper-arXiv%3A2610.22234-B31B1B?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2610.22234)
 [![Project Homepage](https://img.shields.io/badge/Project-Homepage-287b97?style=for-the-badge)](https://os-copilot.github.io/OS-Helix)
 ![Code: Coming Soon](https://img.shields.io/badge/Code-Coming%20Soon-64748b?style=for-the-badge)
-![Data: Coming Soon](https://img.shields.io/badge/Data-Coming%20Soon-64748b?style=for-the-badge)
-![Models: Coming Soon](https://img.shields.io/badge/Models-Coming%20Soon-64748b?style=for-the-badge)
+[![Models](https://img.shields.io/badge/Models-Hugging%20Face-FF9D0B?style=for-the-badge&logo=huggingface)](https://huggingface.co/collections/YYangzzzz/os-helix)
+[![Data](https://img.shields.io/badge/Data-Hugging%20Face-FF9D0B?style=for-the-badge&logo=huggingface)](https://huggingface.co/datasets/YYangzzzz/OS-Helix-Dataset)
 
 **Bowen Yang<sup>1,2,*</sup>, Kaiming Jin<sup>3,*</sup>, Zichen Ding<sup>2,*</sup>, Zhenyu Wu<sup>4</sup>, Zehao Li<sup>1</sup>, Zhoumianze Liu<sup>5</sup>, Kanzhi Cheng<sup>6</sup>, Fangzhi Xu<sup>7</sup>, Yanan Sun<sup>2</sup>, Qiushi Sun<sup>8,†</sup>, Yu Qiao<sup>2,†</sup>**
 
@@ -17,7 +17,7 @@
 
 </div>
 
-> **Code and Data: Coming Soon.** This repository currently introduces the paper. Training and evaluation code, data, and model artifacts are planned for release.
+> **Code: Coming Soon.** We are organizing the training and evaluation code for release. The [models](https://huggingface.co/collections/YYangzzzz/os-helix) and [dataset](https://huggingface.co/datasets/YYangzzzz/OS-Helix-Dataset) are available on Hugging Face.
 
 | OSWorld-Verified | WindowsAgentArena | OSWorld Pass@3 |
 | :---: | :---: | :---: |
