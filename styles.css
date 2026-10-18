@@ -106,14 +106,16 @@ footer p { margin: 6px 0 0; font-size: .76rem; color: var(--muted); }
 /* Distinct resource colors, preserving the established Code button. */
 .button-paper { background: #fff0f0; color: #8b2528; border-color: #efb5b7; font-weight: 700; }
 .button-models { background: #fff8df; color: #73521a; border-color: #efcf79; font-weight: 700; }
-.button-paper img, .button-code img, .button-models img { filter: none; }
+.button-data { background: #fff8df; color: #73521a; border-color: #efcf79; font-weight: 700; }
+.button-paper img, .button-code img, .button-models img, .button-data img { filter: none; }
 .button-code { background: #f2ecff; color: #594176; border-color: #cdbce5; }
 a.button-code:hover { background: #e6daf7; }
+a.button-models:hover, a.button-data:hover { background: #ffefbc; color: #73521a; }
 .score-delta { display: block; margin-top: 2px; font-size: .7rem; line-height: 1.2; font-weight: 500; }
 .delta-up { color: #187948; }
 .delta-down { color: #c23b36; }
 
-.button-models img { width: 22px; height: 21px; }
+.button-models img, .button-data img { width: 22px; height: 21px; }
 
 @media (max-width: 760px) { .result-strip > div > span { font-size: .72rem; } .result-strip > div { padding-inline: 8px; } }
 
